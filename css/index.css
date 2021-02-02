@@ -1531,8 +1531,8 @@ img:not([src]) {
   overflow: auto;
   margin: 0 0 1rem;
   padding: 0;
-  background: #f6f8fa;
-  color: #90a4ae;
+  background: #212121;
+  color: #eff;
   line-height: 1.6;
 }
 blockquote {
@@ -1575,7 +1575,7 @@ blockquote footer cite:before {
 #article-container pre code {
   padding: 0;
   background: none;
-  color: #90a4ae;
+  color: #eff;
   text-shadow: none;
 }
 #article-container figure.highlight {
@@ -1596,11 +1596,11 @@ blockquote footer cite:before {
 #article-container figure.highlight .caption a {
   float: right;
   padding-right: 10px;
-  color: #90a4ae;
+  color: #eff;
 }
 #article-container figure.highlight figcaption a:hover,
 #article-container figure.highlight .caption a:hover {
-  border-bottom-color: #90a4ae;
+  border-bottom-color: #eff;
 }
 #article-container .highlight-tools {
   position: relative;
@@ -1619,8 +1619,8 @@ blockquote footer cite:before {
   overflow: hidden;
   min-height: 1.2rem;
   height: 2.15em;
-  background: #e6ebf1;
-  color: #90a4ae;
+  background: #1c1c1c;
+  color: rgba(238,255,255,0.8);
   font-size: 14px;
 }
 #article-container .highlight-tools.closed + table {
@@ -1983,6 +1983,16 @@ blockquote footer cite:before {
     width: 100% !important;
   }
 }
+@media screen and (min-width: 900px) {
+  .layout > div:first-child {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -o-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+}
 .layout.hide-aside {
   max-width: 1000px;
 }
@@ -2315,7 +2325,7 @@ blockquote footer cite:before {
 }
 @media screen and (min-width: 900px) {
   #aside-content {
-    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 900px) {
